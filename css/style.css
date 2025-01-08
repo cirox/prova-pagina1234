@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+section p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap:12px
+}
+
+header a {
+    text-decoration: none;
+    color: #666;
+}
+
+header a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.info-pagina {
+    background-color: #262930;
+    color: #fff;
+    text-align: center;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-bottom: 64px;
+    padding-right: 64px;
+}
+
+.info {
+    background-color: #262930;
+    color: #fff;
+    text-align: center;
+    padding-top: 128px;
+    padding-left: 64px;
+    padding-bottom: 128px;
+    padding-right: 64px;
+}
+
+.info h1, .info-pagina h1 {
+    font-size: 64px;
+}
+
+.card {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 32px;
+    padding: 64px 32px;
+}
+
+.card div {
+    background-color: #fff;
+}
+
+.card div h2 {
+    font-size: 14px;
+    padding: 12px 16px;
+}
+
+.card div p {
+    padding: 0 16px 12px 16px;
+    font-size: 14px;
+}
+
+.card div img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pagina-interna {
+    display: flex;
+    gap: 32px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 64px 32px;
+}
+
+.pagina-interna div {
+    width: 50%;
+}
+
+.pagina-interna h2 {
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 32px 0;
+    margin-top: 64px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.pagina-interna div ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: #ccc;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .info h1 {
+        font-size: 48px;
+    }
+
+    .pagina-interna {
+        flex-direction: column;
+    }
+
+    .pagina-interna div {
+        width: 100%;
+    }
+
+}
